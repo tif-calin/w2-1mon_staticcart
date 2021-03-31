@@ -43,7 +43,21 @@ export const createListing = obj => {
 
     // add ability to shop till you drop
     const divPurchase = document.createElement('div');
-    
+    divPurchase.classList.add('purchase');
+    const btnPurchase = document.createElement('button');
+    btnPurchase.textContent = 'add to cart';
+    divPurchase.appendChild(btnPurchase);
+    const lblPrice = document.createElement('label');
+    lblPrice.classList.add('price');
+    lblPrice.textContent = obj['price'].toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    divPurchase.appendChild(lblPrice);
+    const inpQuantity = document.createElement('input');
+    inpQuantity.type = 'number';
+    inpQuantity.min = '0';
+    inpQuantity.value = '1';
+    divPurchase.appendChild(inpQuantity);
+
+    item.appendChild(divPurchase);
 
     return item;
 };
