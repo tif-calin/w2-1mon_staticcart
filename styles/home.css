@@ -1,1 +1,72 @@
 /* add home page styles here */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    list-style: none;
+    padding: 1rem;
+    width: 70%;
+}
+
+.listing {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid dimgrey;
+    border-radius: 2rem;
+    width: 20rem;
+    height: auto;
+    padding: 2rem;
+    margin: 1rem;
+    align-items: center;
+}
+
+.listing h3 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.listing .tree-marker {
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.listing h4 {
+    font-style: italic;
+}
+
+.listing details, label {
+    width: 100%;
+}
+
+.listing > label {
+    font-size: 1.2rem;
+}
+
+.listing > label:after {
+    content: ':';
+}
+
+.listing summary {
+    font-weight: bold;
+}
+
+.listing img {
+    width: 100%;
+}
+
+.purchase {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.purchase label {
+    text-align: center;
+}
+
+.purchase * {
+    width: 100%;
+}
