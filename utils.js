@@ -63,8 +63,8 @@ export const createListing = obj => {
 };
 
 export const findById = (array, id) => {
-    for (let item in array) {
-        if (item.id === id) return item;
+    for (let item of array) {
+        if (item['id'] === id) return item;
     }
     return null;
 };
@@ -89,7 +89,7 @@ export const createCartRow = (product, quantity) => {
 
     // make price <td>
     const tdPrice = document.createElement('td');
-    tdPrice.textContent = calcItemTotal(product['price'], quantity);
+    tdPrice.textContent = '$' + calcItemTotal(product['price'], quantity);
     item.appendChild(tdPrice);
 
     return item;
