@@ -62,12 +62,6 @@ export const createListing = obj => {
     return item;
 };
 
-export const createCartRow = obj => {
-    const item = document.createElement('tr');
-
-    return item;
-};
-
 export const findById = (array, id) => {
     for (let item in array) {
         if (item.id === id) return item;
@@ -78,4 +72,25 @@ export const findById = (array, id) => {
 export const calcItemTotal = (price, quantity) => {
     const total = Math.round( price * quantity * 100 ) / 100;
     return total.toFixed(2);
+};
+
+export const createCartRow = (product, quantity) => {
+    const item = document.createElement('tr');
+
+    // make name <td>
+    const tdName = document.createElement('td');
+    tdName.textContent = product['name'];
+    item.appendChild(tdName);
+
+    // make quantity <td>
+    const tdQuantity = document.createElement('td');
+    tdQuantity.textContent = quantity;
+    item.appendChild(tdQuantity);
+
+    // make price <td>
+    const tdPrice = document.createElement('td');
+    tdPrice.textContent = calcItemTotal(product['price'], quantity);
+    item.appendChild(tdPrice);
+
+    return item;
 };
