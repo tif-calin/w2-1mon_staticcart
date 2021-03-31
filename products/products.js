@@ -1,8 +1,9 @@
 export const products = [
     {
+        'id': '0boq',
         'name': 'Voqui Blanco',
         'species': 'Boquila trifoliolata',
-        'image': 'Boquila-trifoliolata.png',
+        'image': '0boq.png',
         'superpowers': [
             {
                 'name': 'Mimicry',
@@ -13,22 +14,28 @@ export const products = [
         'is-tree': false
     },
     {
+        'id': '1syn',
         'name': 'Miracle Berry',
         'species': 'Synsepalum dulcificum',
-        'image': 'Synsepalum-dulcificum.jpg',
+        'image': '1syn.jpg',
         'superpowers': [
             {
+                'name': 'Flavor Morph',
+                'description': 'This berry contains one of the largest proteins ever found in a plant that binds to the tongue\'s taste buds and causes sour fruit to taste sweet without adding any calories!'
+            },
+            {
                 'name': 'Single Handedly Threaten the entire Sugar Industry',
-                'description': '',
+                'description': 'In the 1970s, research into this plant was gaining traction with studies showing an excellent safety profile and even human studies showing preference of "mberry" sweetened candies over sugar sweetened candies. Eventually Big Sugar&trade; took notice and managed to get the FDA to classify it as an additive before it could gain approval for GRAS (generally recognized as safe). This highly limited the amount that this powder could be used in foods and killed the movement before it even became commercially available.',
             }
         ],
         'price': 19.49,
         'is-tree': true
     },
     {
+        'id': '2cus',
         'name': 'Dodder',
         'species': 'Cuscuta',
-        'image': 'Cuscuta.jpg',
+        'image': '2cus.jpg',
         'superpowers': [
             {
                 'name': 'Master of LinkedIn',
@@ -39,9 +46,10 @@ export const products = [
         'is-tree': false
     },
     {
+        'id': '3all',
         'name': 'Walking onion',
         'species': 'Allium × proliferum',
-        'image': 'Allium-proliferum.jpg',
+        'image': '3all.jpg',
         'superpowers': [
             {
                 'name': 'Literally Walks',
@@ -52,9 +60,10 @@ export const products = [
         'is-tree': false
     },
     {
+        'id': '4mor',
         'name': 'White Mulberry',
         'species': 'Morus alba',
-        'image': 'Morus-alba.jpg',
+        'image': '4mor.jpg',
         'superpowers': [
             {
                 'name': 'Superspeed',
@@ -66,6 +75,20 @@ export const products = [
             }
         ],
         'price': 23.99,
+        'is-tree': true
+    },
+    {
+        'id': '5sau',
+        'name': 'Katuk',
+        'species': 'Sauropus androgynus',
+        'image': '5sau.jpg',
+        'superpowers': [
+            {
+                'name': 'Protein Powerup',
+                'description': '50%. Can you believe it? 50%... just wow. 50% of the katuk leaves are protein. This is actually one of the most commonly eaten greens in the world, but it is primarily eaten in the tropics'
+            }
+        ],
+        'price': 10.25,
         'is-tree': true
     }
 ];
