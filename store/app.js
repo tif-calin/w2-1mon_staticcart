@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
-import { createListing } from './utils.js';
-import { products } from './products/products.js';
+import { createListing } from '../utils.js';
+import { products } from './products.js';
 
 const store = document.querySelector('#products-listing');
 

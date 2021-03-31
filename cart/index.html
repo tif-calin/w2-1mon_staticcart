@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Super Plants Store</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/cart.css">
-    <script type="module" src="cart.js" defer></script>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="app.js" defer></script>
 </head>
 
 <body>
@@ -19,23 +19,18 @@
     </header>
     <main>
         <h3>Cart</h3>
-        <table>
+        <table id="shopping-cart">
             <thead>
                 <th>Plant</th>
                 <th>Quantity</th>
                 <th>Price</th>
             </thead>
-            <tr>
-                <td>clomp</td>
-                <td>clomp</td>
-                <td>clomp</td>
-            </tr>
-            <tr>
-                <td>doo</td>
-                <td>doo</td>
-                <td>doo</td>
-            </tr>
         </table>
+        <div class="wrapper-h price">
+            <label>total:</label>
+            <var id="price-total">$0.00</var>
+        </div>
+        <button>Place order</button>
     </main>
     <footer>
         <div class="copy gutter-right">&#x1f12f; Steal this content</div>

@@ -116,3 +116,14 @@ footer {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
 }
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.wrapper-h {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

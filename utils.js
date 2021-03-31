@@ -23,7 +23,7 @@ export const createListing = obj => {
 
     // add image
     const itemImg = document.createElement('img');
-    itemImg.src = './assets/' + obj['image'];
+    itemImg.src = '../assets/' + obj['image'];
     itemImg.alt = `${obj['name']} (${obj['species']})`;
     item.appendChild(itemImg);
 
@@ -63,13 +63,44 @@ export const createListing = obj => {
 };
 
 export const findById = (array, id) => {
-    for (let item in array) {
-        if (item.id === id) return item;
+    for (let item of array) {
+        if (item['id'] === id) return item;
     }
     return null;
 };
 
 export const calcItemTotal = (price, quantity) => {
-    const total = Math.round( price * quantity * 100 ) / 100;
+    const total = Math.round(price * quantity * 100) / 100;
     return total.toFixed(2);
+};
+
+export const createCartRow = (product, quantity) => {
+    const item = document.createElement('tr');
+
+    // make name <td>
+    const tdName = document.createElement('td');
+    tdName.textContent = product['name'];
+    item.appendChild(tdName);
+
+    // make quantity <td>
+    const tdQuantity = document.createElement('td');
+    tdQuantity.textContent = quantity;
+    item.appendChild(tdQuantity);
+
+    // make price <td>
+    const tdPrice = document.createElement('td');
+    tdPrice.textContent = '$' + calcItemTotal(product['price'], quantity);
+    item.appendChild(tdPrice);
+
+    return item;
+};
+
+export const calcOrderTotal = (products, cart) => {
+    let total = 0;
+    for (let item of cart) {
+        const product = findById(products, item['id']);
+        total += Number(calcItemTotal(Number(product['price']), item['quantity']));
+    }
+
+    return total;
 };
