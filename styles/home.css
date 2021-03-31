@@ -58,7 +58,7 @@ ul {
 .purchase {
     margin-top: 1rem;
     display: grid;
-    grid-template-columns: 3fr 2fr 1fr;
+    grid-template-columns: 5fr 2fr 2fr;
     align-items: center;
     justify-content: center;
 }

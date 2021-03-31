@@ -49,11 +49,12 @@ export const createListing = obj => {
     divPurchase.appendChild(btnPurchase);
     const lblPrice = document.createElement('label');
     lblPrice.classList.add('price');
-    lblPrice.textContent = obj['price'].toLocaleString('en-US', {style: 'currency', currency: 'USD'});
+    lblPrice.textContent = obj['price'].toLocaleString('en-US', { style: 'currency', currency: 'USD' });
     divPurchase.appendChild(lblPrice);
     const inpQuantity = document.createElement('input');
     inpQuantity.type = 'number';
     inpQuantity.min = '0';
+    inpQuantity.value = '1';
     divPurchase.appendChild(inpQuantity);
 
     item.appendChild(divPurchase);
