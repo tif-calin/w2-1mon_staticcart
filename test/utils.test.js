@@ -5,7 +5,7 @@ const test = QUnit.test;
 
 test('time to test a function', (expect) => {
     // Set up your arguments and expectations
-    const expected = '';
+    const expected = '<li>whatever</li>';
     
     // Call the function you're testing and set the result to a const
     const actual = createListing({

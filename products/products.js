@@ -85,7 +85,7 @@ export const products = [
         'superpowers': [
             {
                 'name': 'Protein Powerup',
-                'description': '50%. Can you believe it? 50%... just wow. 50% of the katuk leaves are protein. This is actually one of the most commonly eaten greens in the world, but it is primarily eaten in the tropics'
+                'description': 'The katuk leaves are packed with protein. A single serving meets 50% of the average person\'s recommended daily protein intake. This is actually one of the most commonly eaten greens in the world, but it is primarily eaten in the tropics.'
             }
         ],
         'price': 10.25,
