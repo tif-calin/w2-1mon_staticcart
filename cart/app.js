@@ -1,8 +1,9 @@
-import { findById, createCartRow } from '../utils.js';
+import { findById, createCartRow, calcOrderTotal } from '../utils.js';
 import { cart } from './cart.js';
 import { products } from '../store/products.js';
 
 const tblCart = document.querySelector('#shopping-cart');
+const varTotal = document.querySelector('#price-total');
 
 const loadTable = () => {
     for (let order of cart) {
@@ -11,6 +12,8 @@ const loadTable = () => {
             tblCart.appendChild(item);
         }
     }
+
+    varTotal.textContent = '$' + calcOrderTotal(products, cart);
 };
 
 loadTable();

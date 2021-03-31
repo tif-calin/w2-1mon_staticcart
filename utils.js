@@ -94,3 +94,13 @@ export const createCartRow = (product, quantity) => {
 
     return item;
 };
+
+export const calcOrderTotal = (products, cart) => {
+    let total = 0;
+    for (let item of cart) {
+        const product = findById(products, item['id']);
+        total += Number(calcItemTotal(Number(product['price']), item['quantity']));
+    }
+
+    return total;
+};
