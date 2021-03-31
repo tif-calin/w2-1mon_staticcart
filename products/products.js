@@ -1,8 +1,9 @@
 export const products = [
     {
+        'id': '0boq',
         'name': 'Voqui Blanco',
         'species': 'Boquila trifoliolata',
-        'image': 'Boquila-trifoliolata.png',
+        'image': '0boq.png',
         'superpowers': [
             {
                 'name': 'Mimicry',
@@ -13,9 +14,10 @@ export const products = [
         'is-tree': false
     },
     {
+        'id': '1syn',
         'name': 'Miracle Berry',
         'species': 'Synsepalum dulcificum',
-        'image': 'Synsepalum-dulcificum.jpg',
+        'image': '1syn.jpg',
         'superpowers': [
             {
                 'name': 'Single Handedly Threaten the entire Sugar Industry',
@@ -26,9 +28,10 @@ export const products = [
         'is-tree': true
     },
     {
+        'id': '2cus',
         'name': 'Dodder',
         'species': 'Cuscuta',
-        'image': 'Cuscuta.jpg',
+        'image': '2cus.jpg',
         'superpowers': [
             {
                 'name': 'Master of LinkedIn',
@@ -39,9 +42,10 @@ export const products = [
         'is-tree': false
     },
     {
+        'id': '3all',
         'name': 'Walking onion',
         'species': 'Allium × proliferum',
-        'image': 'Allium-proliferum.jpg',
+        'image': '3all.jpg',
         'superpowers': [
             {
                 'name': 'Literally Walks',
@@ -52,9 +56,10 @@ export const products = [
         'is-tree': false
     },
     {
+        'id': '4mor',
         'name': 'White Mulberry',
         'species': 'Morus alba',
-        'image': 'Morus-alba.jpg',
+        'image': '4mor.jpg',
         'superpowers': [
             {
                 'name': 'Superspeed',
@@ -66,6 +71,20 @@ export const products = [
             }
         ],
         'price': 23.99,
+        'is-tree': true
+    },
+    {
+        'id': '5sau',
+        'name': 'katuk',
+        'species': 'Sauropus androgynus',
+        'image': '5sau.jpg',
+        'superpowers': [
+            {
+                'name': 'Protein Powerup',
+                'description': '50%. Can you believe it? 50%... just wow. 50% of the katuk leaves are protein. This is actually one of the most commonly eaten greens in the world, but it is primarily eaten in the tropics'
+            }
+        ],
+        'price': 10.25,
         'is-tree': true
     }
 ];
