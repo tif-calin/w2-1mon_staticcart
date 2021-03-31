@@ -62,6 +62,12 @@ export const createListing = obj => {
     return item;
 };
 
+export const createCartRow = obj => {
+    const item = document.createElement('tr');
+
+    return item;
+};
+
 export const findById = (array, id) => {
     for (let item in array) {
         if (item.id === id) return item;
