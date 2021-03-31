@@ -44,9 +44,6 @@ export const createListing = obj => {
     // add ability to shop till you drop
     const divPurchase = document.createElement('div');
     divPurchase.classList.add('purchase');
-    const btnPurchase = document.createElement('button');
-    btnPurchase.textContent = 'add to cart';
-    divPurchase.appendChild(btnPurchase);
     const lblPrice = document.createElement('label');
     lblPrice.classList.add('price');
     lblPrice.textContent = obj['price'].toLocaleString('en-US', { style: 'currency', currency: 'USD' });
@@ -56,8 +53,18 @@ export const createListing = obj => {
     inpQuantity.min = '0';
     inpQuantity.value = '1';
     divPurchase.appendChild(inpQuantity);
+    const btnPurchase = document.createElement('button');
+    btnPurchase.innerHTML = '&#x1F6D2;';
+    divPurchase.appendChild(btnPurchase);
 
     item.appendChild(divPurchase);
 
     return item;
+};
+
+export const findById = (array, id) => {
+    for (let item in array) {
+        if (item.id === id) return item;
+    }
+    return null;
 };

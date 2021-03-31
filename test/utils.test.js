@@ -1,9 +1,9 @@
 // IMPORT MODULES under test here:
-import { createListing } from '../utils.js';
+import { createListing, findById } from '../utils.js';
 
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
+test('testing createListing', (expect) => {
     // Set up your arguments and expectations
     const expected = '<li>whatever</li>';
     
@@ -20,4 +20,22 @@ test('time to test a function', (expect) => {
 
     // Make assertions about what is expected versus the actual result
     expect.equal(actual, expected);
+});
+
+test('testing findById', expect => {
+    const testArray = [];
+    testArray.push({
+        'id': '0mg',
+        'name': 'oh my doG'
+    })
+    testArray.push({
+        'id': '1ol',
+        'name': 'lol out loud'
+    })
+
+    const expected = testArray[0];
+
+    const actual = findById(testArray, '0mg');
+
+    expect.deepEqual(actual, expected);
 });
