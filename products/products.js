@@ -13,6 +13,19 @@ export const products = [
         'is-tree': false
     },
     {
+        'name': 'Miracle Berry',
+        'species': 'Synsepalum dulcificum',
+        'image': 'Synsepalum-dulcificum.jpg',
+        'superpowers': [
+            {
+                'name': 'Single Handedly Threaten the entire Sugar Industry',
+                'description': "",
+            }
+        ],
+        'price': 19.49,
+        'is-tree': true
+    },
+    {
         'name': 'Dodder',
         'species': 'Cuscuta',
         'image': 'Cuscuta.jpg',
@@ -37,5 +50,22 @@ export const products = [
         ],
         'price': 8.99,
         'is-tree': false
+    },
+    {
+        'name': 'White Mulberry',
+        'species': 'Morus alba',
+        'image': 'Morus-alba.jpg',
+        'superpowers': [
+            {
+                'name': 'Superspeed',
+                'description': "The mulberry discovered catapults long before humans had the idea. Mulberry trees release their pollen using a catapult method that shoots out pollen at over 350mph&mdash;the fastest known rapid plant movement.",
+            },
+            {
+                'name': 'Silk Road',
+                'description': "What would the Silk Road have been without silk? What would silkworms be without the mulberry? The leaves of this tree are not only used to make tea in Korea, but have also historically been the preferred feed for silkworms."
+            }
+        ],
+        'price': 23.99,
+        'is-tree': true
     }
 ];
