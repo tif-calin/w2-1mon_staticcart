@@ -17,7 +17,7 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: #eee;
 }
 
 main {
@@ -26,6 +26,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background-color: #ddd;
 }
 
 section {

@@ -20,8 +20,12 @@ export const products = [
         'image': '1syn.jpg',
         'superpowers': [
             {
+                'name': 'Flavor Morph',
+                'description': 'This berry contains one of the largest proteins ever found in a plant that binds to the tongue\'s taste buds and causes sour fruit to taste sweet without adding any calories!'
+            },
+            {
                 'name': 'Single Handedly Threaten the entire Sugar Industry',
-                'description': '',
+                'description': 'In the 1970s, research into this plant was gaining traction with studies showing an excellent safety profile and even human studies showing preference of "mberry" sweetened candies over sugar sweetened candies. Eventually Big Sugar&trade; took notice and managed to get the FDA to classify it as an additive before it could gain approval for GRAS (generally recognized as safe). This highly limited the amount that this powder could be used in foods and killed the movement before it even became commercially available.',
             }
         ],
         'price': 19.49,
@@ -75,7 +79,7 @@ export const products = [
     },
     {
         'id': '5sau',
-        'name': 'katuk',
+        'name': 'Katuk',
         'species': 'Sauropus androgynus',
         'image': '5sau.jpg',
         'superpowers': [
