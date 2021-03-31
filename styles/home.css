@@ -13,7 +13,7 @@ ul {
     display: flex;
     flex-direction: column;
     border: 2px solid dimgrey;
-    border-radius: 2rem;
+    border-radius: 1rem;
     width: 20rem;
     height: 100%; /*try auto to make all items in a row have the same height*/
     padding: 2rem;
@@ -25,7 +25,7 @@ ul {
 
 .listing h3 {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .listing .tree-marker {
