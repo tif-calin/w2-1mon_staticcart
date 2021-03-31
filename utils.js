@@ -23,7 +23,7 @@ export const createListing = obj => {
 
     // add image
     const itemImg = document.createElement('img');
-    itemImg.src = './assets/' + obj['image'];
+    itemImg.src = '../assets/' + obj['image'];
     itemImg.alt = `${obj['name']} (${obj['species']})`;
     item.appendChild(itemImg);
 
