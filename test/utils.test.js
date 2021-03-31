@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { createListing, findById } from '../utils.js';
+import { createListing, findById, calcItemTotal } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -38,4 +38,15 @@ test('testing findById', expect => {
     const actual = findById(testArray, '0mg');
 
     expect.deepEqual(actual, expected);
+});
+
+test('testing calcItemTotal', expect => {
+    const expected1 = '$80.44'
+    const actual1 = calcItemTotal(20.11, 4);2
+
+    const expected2 = '$0.03'
+    const actual2 = calcItemTotal(0.0007, 36);
+
+    expect.equal(actual1, expected1);
+    expect.equal(actual2, expected2);
 });
