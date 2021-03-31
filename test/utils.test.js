@@ -31,11 +31,11 @@ test('testing findById', expect => {
     testArray.push({
         'id': '0mg',
         'name': 'oh my doG'
-    })
+    });
     testArray.push({
         'id': '1ol',
         'name': 'lol out loud'
-    })
+    });
 
     const expected = testArray[0];
 
@@ -45,10 +45,10 @@ test('testing findById', expect => {
 });
 
 test('testing calcItemTotal', expect => {
-    const expected1 = '80.44'
-    const actual1 = calcItemTotal(20.11, 4);2
+    const expected1 = '80.44';
+    const actual1 = calcItemTotal(20.11, 4);
 
-    const expected2 = '0.03'
+    const expected2 = '0.03';
     const actual2 = calcItemTotal(0.0007, 36);
 
     expect.equal(actual1, expected1);
