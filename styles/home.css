@@ -39,6 +39,14 @@ ul {
     width: 100%;
 }
 
+.listing > label {
+    font-size: 1.2rem;
+}
+
+.listing > label:after {
+    content: ':';
+}
+
 .listing summary {
     font-weight: bold;
 }
@@ -47,6 +55,18 @@ ul {
     width: 100%;
 }
 
-.listing button {
+.purchase {
     margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.purchase label {
+    text-align: center;
+}
+
+.purchase * {
+    width: 100%;
 }
