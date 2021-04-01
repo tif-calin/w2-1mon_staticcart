@@ -116,3 +116,17 @@ export const getCart = () => {
 export const setCart = cart => {
     localStorage.setItem(CART, JSON.parse(cart));
 };
+
+export const addItemToCart = (productId, quantity) => {
+    const cart = getCart();
+
+    const match = findById(cart, productId);
+
+    if (match) match['quantity'] += quantity;
+    else {
+        const newItem = { 'id': productId, 'quantity': quantity };
+        cart.push(newItem);
+    }
+
+    setCart(cart);
+};
