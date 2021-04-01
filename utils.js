@@ -1,3 +1,4 @@
+const CART = 'CART';
 
 export const createListing = obj => {
     // create an <li> and return it
@@ -103,4 +104,11 @@ export const calcOrderTotal = (products, cart) => {
     }
 
     return total;
+};
+
+export const getCart = () => {
+    const cart = JSON.parse(localStorage.getItem(CART));
+
+    if (cart) return cart;
+    else return [];
 };
