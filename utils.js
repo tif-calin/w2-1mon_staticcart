@@ -112,3 +112,7 @@ export const getCart = () => {
     if (cart) return cart;
     else return [];
 };
+
+export const setCart = cart => {
+    localStorage.setItem(CART, JSON.parse(cart));
+};
