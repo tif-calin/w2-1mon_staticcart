@@ -104,5 +104,19 @@ export const products = [
         ],
         'price': 8.25,
         'is-tree': true
+    },
+    {
+        'id': '7bun',
+        'name': 'Silver Peanut Butter Plant',
+        'species': 'Bunchosia argentea',
+        'image': '7bun.jpg',
+        'superpowers': [
+            {
+                'name': 'Just Add Jelly',
+                'description': 'I guess if beef and onion doesn\'t do it for you, you can enjoy some peanut butter(-tasting fruit)?'
+            }
+        ],
+        'price': 11.11,
+        'is-tree': true
     }
 ];
