@@ -127,3 +127,13 @@ h3 {
     flex-direction: row;
     justify-content: center;
 }
+
+#header-nav {
+    position: absolute;
+    width: 100%;
+    text-align: right;
+}
+
+#header-nav a {
+    margin:0.2rem;
+}
