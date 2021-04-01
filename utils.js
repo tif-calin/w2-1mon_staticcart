@@ -104,7 +104,7 @@ export const calcOrderTotal = (products, cart) => {
         total += Number(calcItemTotal(Number(product['price']), item['quantity']));
     }
 
-    return total;
+    return (Math.round(total * 100) / 100).toFixed(2);
 };
 
 export const getCart = () => {
