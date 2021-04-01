@@ -3,7 +3,7 @@ export const products = [
         'id': '0boq',
         'name': 'Voqui Blanco',
         'species': 'Boquila trifoliolata',
-        'image': '0boq.png',
+        'image': '0boq.jpg',
         'superpowers': [
             {
                 'name': 'Mimicry',
@@ -89,6 +89,34 @@ export const products = [
             }
         ],
         'price': 10.25,
+        'is-tree': true
+    },
+    {
+        'id': '6too',
+        'name': 'Beef and Onion Plant',
+        'species': 'Toona sinensis',
+        'image': '6too.jpg',
+        'superpowers': [
+            {
+                'name': 'Vegan',
+                'description': 'It just tastes like... beef and onions...'
+            }
+        ],
+        'price': 8.25,
+        'is-tree': true
+    },
+    {
+        'id': '7bun',
+        'name': 'Silver Peanut Butter Plant',
+        'species': 'Bunchosia argentea',
+        'image': '7bun.jpg',
+        'superpowers': [
+            {
+                'name': 'Just Add Jelly',
+                'description': 'I guess if beef and onion doesn\'t do it for you, you can enjoy some peanut butter(-tasting fruit)?'
+            }
+        ],
+        'price': 11.11,
         'is-tree': true
     }
 ];

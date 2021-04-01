@@ -62,8 +62,8 @@ export const createListing = obj => {
     return item;
 };
 
-export const findById = (array, id) => {
-    for (let item of array) {
+export const findById = (products, id) => {
+    for (let item of products) {
         if (item['id'] === id) return item;
     }
     return null;
