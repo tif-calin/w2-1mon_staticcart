@@ -3,6 +3,7 @@ const CART = 'CART';
 export const createListing = obj => {
     // create an <li> and return it
     const item = document.createElement('li');
+    item.id = obj['id'];
 
     item.classList.add('listing');
 
@@ -114,7 +115,7 @@ export const getCart = () => {
 };
 
 export const setCart = cart => {
-    localStorage.setItem(CART, JSON.parse(cart));
+    localStorage.setItem(CART, JSON.stringify(cart));
 };
 
 export const addItemToCart = (productId, quantity) => {
@@ -122,7 +123,7 @@ export const addItemToCart = (productId, quantity) => {
 
     const match = findById(cart, productId);
 
-    if (match) match['quantity'] += quantity;
+    if (match) match['quantity'] = Number(match['quantity']) + Number(quantity);
     else {
         const newItem = { 'id': productId, 'quantity': quantity };
         cart.push(newItem);
