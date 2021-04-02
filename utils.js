@@ -1,7 +1,9 @@
+const CART = 'CART';
 
 export const createListing = obj => {
     // create an <li> and return it
     const item = document.createElement('li');
+    item.id = obj['id'];
 
     item.classList.add('listing');
 
@@ -102,5 +104,30 @@ export const calcOrderTotal = (products, cart) => {
         total += Number(calcItemTotal(Number(product['price']), item['quantity']));
     }
 
-    return total;
+    return (Math.round(total * 100) / 100).toFixed(2);
+};
+
+export const getCart = () => {
+    const cart = JSON.parse(localStorage.getItem(CART));
+
+    if (cart) return cart;
+    else return [];
+};
+
+export const setCart = cart => {
+    localStorage.setItem(CART, JSON.stringify(cart));
+};
+
+export const addItemToCart = (productId, quantity) => {
+    const cart = getCart();
+
+    const match = findById(cart, productId);
+
+    if (match) match['quantity'] = Number(match['quantity']) + Number(quantity);
+    else {
+        const newItem = { 'id': productId, 'quantity': quantity };
+        cart.push(newItem);
+    }
+
+    setCart(cart);
 };

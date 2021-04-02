@@ -19,6 +19,7 @@ body {
     
     font-family: 'PT Sans', sans-serif;
     background-color: #eee;
+    background-image: repeating-linear-gradient(-45deg, #EF476F22, #EF476F22 100px, #ffd16622 100px, #ffd16622 200px, #06D6A022 200px, #06D6A022 300px, #118AB222 300px, #118AB222 400px, #073B4C22 400px, #073B4C22 500px);
 }
 
 main {
@@ -27,7 +28,6 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
-    background-color: #ddd;
 }
 
 section {
@@ -55,6 +55,10 @@ header {
     font-family: 'Lilita One', sans-serif;
 }
 
+header h2 {
+    z-index: 1;
+}
+
 header a {
     text-decoration: none;
     color: black;
@@ -65,11 +69,6 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
-}
-
-h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
 }
 
 .gutter-right {
@@ -95,8 +94,12 @@ footer {
     height: var(--footer-height);
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: #fff0;
     box-shadow: var(--shadow);
+}
+
+header {
+    background-color: #e9c46a;
 }
   
 @keyframes pulse {
@@ -117,13 +120,59 @@ footer {
     }
 }
 
+h1 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
 h3 {
     font-size: 1.6rem;
-    font-weight: bold;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 
 .wrapper-h {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+#header-nav {
+    position: absolute;
+    width: 100%;
+    text-align: right;
+}
+
+#header-nav a {
+    margin: 0.2rem;
+}
+
+main > nav {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
 }
