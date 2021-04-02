@@ -1,12 +1,16 @@
-/* add home page styles here */
 ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     justify-items: center;
     list-style: none;
-    padding: 1rem;
-    width: 70%;
+    margin-bottom: 1rem;
+    width: 58%;
+    background-color: #ddd;
+    border: 1px transparent black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px inset;
+    background-image: repeating-linear-gradient(-45deg, #EF476F99, #EF476F99 100px, #ffd16699 100px, #ffd16699 200px, #06D6A099 200px, #06D6A099 300px, #118AB299 300px, #118AB299 400px, #073B4C99 400px, #073B4C99 500px);
 }
 
 .listing {
@@ -35,6 +39,9 @@ ul {
 
 .listing h4 {
     font-style: italic;
+    color: #000a;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 .listing details, label {
@@ -55,6 +62,8 @@ ul {
 
 .listing img {
     width: 100%;
+    height: 12rem;
+    object-fit: contain;
     margin: 1rem 0;
 }
 

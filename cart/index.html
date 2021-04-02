@@ -16,21 +16,30 @@
 <body>
     <header>
         <h2><a href='../index.html'>Super Plants Store</a></h2>
+        <nav id="header-nav" class="gutter-right">
+            <a href='../'>home</a>
+            <a href='../store/'>store</a>
+        </nav>
     </header>
     <main>
         <h3>Cart</h3>
         <table id="shopping-cart">
             <thead>
-                <th>Plant</th>
-                <th>Quantity</th>
-                <th>Price</th>
+                <tr>
+                    <th>Plant</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
             </thead>
+            <tbody>
+                
+            </tbody>
         </table>
         <div class="wrapper-h price">
             <label>total:</label>
             <var id="price-total">$0.00</var>
         </div>
-        <button>Place order</button>
+        <button id="place-order">Place order</button>
     </main>
     <footer>
         <div class="copy gutter-right">&#x1f12f; Steal this content</div>
