@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { createListing, addItemToCart, findById } from '../utils.js';
+import { createListing, addItemToCart } from '../utils.js';
 import { products } from './products.js';
 
 const store = document.querySelector('#products-listing');
@@ -19,6 +19,8 @@ const loadItems = (listings) => {
         
         btnBuy.addEventListener('click', () => {
             addItemToCart(htmlListing.id, inpQuantity.value);
+            btnBuy.disabled = true;
+            inpQuantity.disabled = true;
         });
 
         // show on page
