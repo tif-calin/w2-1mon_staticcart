@@ -19,7 +19,7 @@ body {
     
     font-family: 'PT Sans', sans-serif;
     background-color: #eee;
-    background-image: repeating-linear-gradient(-45deg, #EF476F22, #EF476F22 100px, #ffd16622 100px, #ffd16622 200px, #06D6A022 200px, #06D6A022 300px, #118AB222 300px, #118AB222 400px, #073B4C22 400px, #073B4C22 500px);
+    background-image: repeating-linear-gradient(45deg, #EF476F22, #EF476F22 100px, #ffd16622 100px, #ffd16622 200px, #06D6A022 200px, #06D6A022 300px, #118AB222 300px, #118AB222 400px, #073B4C22 400px, #073B4C22 500px);
 }
 
 main {
