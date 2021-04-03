@@ -78,6 +78,7 @@ export const calcItemTotal = (price, quantity) => {
 
 export const createCartRow = (product, quantity) => {
     const item = document.createElement('tr');
+    item.id = product['id'];
 
     // make name <td>
     const tdName = document.createElement('td');
@@ -86,7 +87,11 @@ export const createCartRow = (product, quantity) => {
 
     // make quantity <td>
     const tdQuantity = document.createElement('td');
-    tdQuantity.textContent = quantity;
+    const inpQuantity = document.createElement('input');
+    inpQuantity.value = Number(quantity);
+    inpQuantity.type = 'number';
+    inpQuantity.min = 0;
+    tdQuantity.appendChild(inpQuantity);
     item.appendChild(tdQuantity);
 
     // make price <td>

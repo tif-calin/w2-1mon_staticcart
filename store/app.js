@@ -19,6 +19,8 @@ const loadItems = (listings) => {
         
         btnBuy.addEventListener('click', () => {
             addItemToCart(htmlListing.id, inpQuantity.value);
+            btnBuy.disabled = true;
+            inpQuantity.disabled = true;
         });
 
         // show on page

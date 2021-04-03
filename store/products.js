@@ -7,10 +7,10 @@ export const products = [
         'superpowers': [
             {
                 'name': 'Mimicry',
-                'description': 'Native to the temperate rainforests of southern Chile, this mysterious vine is able to mimic the leaves of almost any plant it climbs on. The shape, size, and even color of its leaves transform to match those of plants in its proximity without even needing to physically contact them&mdash;a behavior not known in any other plant! It graciously offers its edible berries to humans and other animals.'
+                'description': 'This mysterious vine is able to mimic the leaves of almost any plant it climbs on. The shape, size, and even color of its leaves transform to match those of plants in its proximity without even needing to physically contact them&mdash;a behavior not known in any other plant! It graciously offers its edible berries to humans and other animals.'
             }
         ],
-        'price': 999,
+        'price': 99.99,
         'is-tree': false
     },
     {
